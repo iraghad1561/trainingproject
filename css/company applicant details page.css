@@ -1,0 +1,231 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+}
+
+header {
+	display: flex;
+	padding: 14px; /*it 14 a*/
+    background-color: #24292F;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+
+.header-button{
+    border: 2px solid #11AAAF;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #11AAAF;
+    color: #24292F;
+    margin-left: 10px;
+    
+       padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    align-content: center;
+    border-radius: 100%;
+    font-size: 18px;
+}
+.header-button:hover {
+    background-color: #24292F;
+    color: #11AAAF;
+  cursor: pointer;  
+}
+
+
+nav {
+	margin-right: 40px;
+}
+.first{display: inline-block;}
+.second{display: inline-block;
+margin-left: 700px;}
+nav a {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 15px;
+	text-decoration: none;
+	font-family: sans-serif;
+	color: #eee;
+	border-bottom:  3px solid transparent;
+	padding: 10px 1px;
+	transition: 200ms;
+    
+}
+.active {
+	border-color: #11AAAF;
+}
+nav a:hover {
+	border-color: #11AAAF;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    float: left;
+}
+
+/**/
+.left-section{
+    margin-top: 74px;
+    padding-right: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 10px;
+    background-color: #24292F;
+    display: inline-block;
+    float: left;
+    width: 25%;
+    
+    
+}
+.left-section img{
+    display:inline-block;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 100px;
+      height: 92px;
+    width: 92px;
+    vertical-align: middle;
+    margin-left: 34px;
+    margin-right: 34px;
+    }
+.left-section h3{ 
+justify-content: center;}
+.left-section h4{
+justify-content: center;}
+.left-section .ul1{
+    margin-top: 8px;
+    list-style-type: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 0px;
+    padding-bottom: 30px;
+    line-height: 2px;
+    
+  
+}
+.left-section .ul1 li{
+
+}
+.left-section .ul1 i{
+display: inline-block;
+padding-right: 8px;
+
+}
+.left-section .ul1 p{
+display: inline-block;
+}
+.left-section .ul2{
+    color: white;
+    padding-left: 10px;
+     line-height: 30px;
+}
+.left-section h3{
+    color: white;
+}
+.left-section h4{
+    color: white;
+    font-weight: lighter;
+    padding-left: 14px;
+   
+}
+.left-section .heading{
+    padding-left: 90px;
+    font-weight: lighter;
+}
+#top{
+  padding-left: 68px;
+    margin-bottom: 38px;
+}
+/* right section style*/
+.right-section{
+    display: inline-block;
+    float: right;
+    margin-top: 55px;
+    width: 73%;
+}
+.right-section #education,#volunteer{
+    display: inline-block;
+    background-color: #F5F8F9;
+    padding-right: 768px;
+    padding-top: 30px;
+    padding-bottom: 4px;
+    padding-left: 28px; 
+    color: #022140;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.right-section #experience{
+    box-sizing: 100%;
+    display: inline-block;
+    background-color: #F5F8F9;
+    padding-right: 758px;
+    padding-top: 30px;
+    padding-bottom: 4px;
+    padding-left: 28px; 
+    color: #022140;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.right-section p{
+    padding-left: 60px;
+      color: #24292F; 
+}
+.right-section .ul3{
+    list-style-type: none;
+    margin: 0px;
+    column-count: 3;   
+     padding-left: 60px;
+}
+.right-section .ul3 li{
+   padding-top: 8px;
+    padding-bottom: 4px; 
+}
+.right-section .ul3 .heading{
+  color: #24292F; 
+    font-weight: lighter;
+}
+.right-section .ul3 #unaiversity,#level,#gpa{
+  color: #5E7787;
+    font-weight: lighter;
+}
+/**/
+#buttom{
+    width: 912px;
+    height: 80px;
+    background-color: #F5F8F9;
+    align-content: center;
+}
+#button1{
+    border: 2px solid #11AAAF;
+    text-align: center;
+    padding: 6px;
+    border-radius: 16px;
+    background-color: #11AAAF;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-left: 400px;
+    margin-bottom: 30px;
+    
+}
+#button1:hover {
+  cursor: pointer;  
+    background-color: white;
+    color: #11AAAF;
+}
+
+@media (max-width: 769px){
+	header {
+		flex-direction: column;
+		padding: 10px;
+	}
+
+}

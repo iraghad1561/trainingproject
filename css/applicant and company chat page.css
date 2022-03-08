@@ -1,0 +1,250 @@
+
+*{
+box-sizing:border-box;
+}
+body{
+background-color:#F5F8F9;
+font-family:sans-serif;
+}
+#container{
+width:100%;
+height:100%;
+background:#eff3f7;
+margin:0 auto;
+font-size:0;
+border-radius:5px;
+overflow:hidden;
+}
+aside{
+width:260px;
+height:800px;
+background-color:#24292F;
+display:inline-block;
+font-size:15px;
+vertical-align:top;
+}
+main{
+width:950px;
+height:800px;
+display:inline-block;
+font-size:15px;
+vertical-align:top;
+}
+
+aside header{
+padding:30px 15px;
+}
+aside input{
+width:100%;
+height:50px;
+line-height:50px;
+padding:0 50px 0 20px;
+background-color:#5e616a;
+border:none;
+border-radius:20px;
+color:black;
+background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_search.png );
+background-repeat:no-repeat;
+background-position:170px;
+background-size:40px;
+    margin-top: -14px;
+}
+aside input::placeholder{
+color:#ffffff;
+}
+
+aside li{
+padding:10px 0;
+}
+aside li:hover{
+background-color:#5e616a;
+}
+h2,h3{
+margin:0;
+}
+aside li img{
+border-radius:50%;
+margin-left:20px;
+margin-right:8px;
+    margin-left: -2px;
+}
+aside li div{
+display:inline-block;
+vertical-align:top;
+margin-top:12px;
+margin-left: -3px;
+}
+aside li h2{
+font-size:14px;
+color:white;
+font-weight:normal;
+margin-bottom:5px;
+}
+/*Online , offline */
+aside li h3{
+font-size:12px;
+color:#7e818a;
+font-weight:normal;
+}
+/**/
+.status{
+width:8px;
+height:8px;
+border-radius:50%;
+display:inline-block;
+margin-right:7px;
+}
+/*النقاط*/
+.green{
+background-color:#11AAAF;
+}
+.orange{
+background-color:#ff725d;
+}
+.blue{
+background-color:#B4B4B4;
+margin-right:0;
+margin-left:7px;
+}
+/*
+#SideBar{
+    background:white;
+}
+aside li h4{
+font-size:12px;
+color:#7e818a;
+font-weight:normal;
+}
+*/
+
+/**/
+main header{
+height:70px;
+padding:30px 20px 30px 40px;
+    background: #ffffff;
+}
+main header > *{
+display:inline-block;
+vertical-align:top;
+}
+main header img:first-child{
+border-radius:50%;
+    
+/*
+    display:inline-block;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 100px;
+      height: 92px;
+    width: 92px;
+*/
+}
+main header img:last-child{
+width:24px;
+
+
+}
+main header div{
+margin-left:10px;
+margin-right:145px;
+}
+main header h2{
+font-size:16px;
+margin-bottom:5px;
+    margin-top:-6px;
+
+}
+main header h3{
+font-size:14px;
+font-weight:normal;
+color:#7e818a;
+    
+}
+
+#chat{
+padding-left:0;
+margin:0;
+list-style-type:none;
+overflow-y:scroll;
+height:535px;
+border-top:2px solid #fff;
+border-bottom:2px solid #fff;
+}
+#chat li{
+padding:10px 30px;
+}
+#chat h2,#chat h3{
+display:inline-block;
+font-size:13px;
+font-weight:normal;
+}
+#chat h3{
+color:#bbb;
+}
+#chat .entete{
+margin-bottom:5px;
+}
+#chat .message{
+padding:20px;
+color:#fff;
+line-height:25px;
+max-width:90%;
+display:inline-block;
+text-align:left;
+border-radius:5px;
+}
+#chat .me{
+text-align:right;
+}
+#chat .you .message{
+background-color:#11AAAF;
+}
+#chat .me .message{
+background-color:#B4B4B4;
+}
+#chat .triangle{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 10px 10px 10px;
+}
+#chat .you .triangle{
+border-color: transparent transparent #11AAAF transparent;
+margin-left:15px;
+}
+#chat .me .triangle{
+border-color: transparent transparent #B4B4B4 transparent;
+margin-left:835px;
+}
+
+main footer{
+height:155px;
+padding:20px 30px 10px 20px;
+}
+main footer textarea{
+resize:none;
+border:none;
+display:block;
+width:100%;
+height:60px;
+border-radius:16px;
+padding:20px;
+font-size:13px;
+margin-bottom:13px;
+}
+main footer textarea::placeholder{
+color:#ddd;
+}
+main footer img{
+height:30px;
+cursor:pointer;
+}
+main footer a{
+text-decoration:none;
+text-transform:uppercase;
+font-weight:bold;
+color:#11AAAF;
+vertical-align:top;
+margin-left:790px;
+margin-top:5px;
+display:inline-block;
+}
