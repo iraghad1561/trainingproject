@@ -1,0 +1,356 @@
+body {
+    font-family: sans-serif;
+}
+.wrapper{
+    display: inline-flex;
+    margin-top: 12vw;
+}
+
+.wrapper .static-txt {
+    color: #24292F;
+    font-size: 220%;
+    font-weight: bold;
+   margin-left: 7vw;
+
+
+}
+.wrapper .dynamic-txts{
+    margin-left:-3.5vw;
+    margin-top:2.5vw;
+    height: 50px;
+    line-height: 50px;
+ overflow:hidden;
+}
+.dynamic-txts li{
+    color: #F64B39;
+    list-style: none;
+    font-size: 220%;
+    font-weight: bold;
+    position: relative;
+    top:0;
+    animation: slide 2s steps(2) infinite;
+    z-index: -10;
+}
+@keyframes slide{
+    100%{
+      top:-200%; 
+    }
+}
+    
+}
+.dynamic-txts li span{
+    position:relative;
+    
+}
+.dynamic-txts li span::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+ border-left: 2px solid #F64B39;
+    animation: typing 1s steps(10) infinite;
+  
+    
+}
+@keyframes typing{
+    100%{
+        left:100%;
+        margin: 0 30px 0 30px;
+    }
+}
+#homeimage {
+    height:45%;
+    width: 45%;
+    z-index: -20;
+    padding: 0;
+    margin: 0; 
+    margin-left: 50%;
+    margin-top: -22vw;
+}
+footer{
+    background-color: #24292F;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    margin-top: 30px;
+}
+footer #footer-section-1{
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+    
+}
+#footer-section-1 img{
+  
+}
+#footer-section-1 p{
+    margin-left: 8px;
+}
+footer #footer-section-2{
+    display: inline-block;
+    margin-left: 600px;
+     border-left: 1px solid white; /* virtical line*/
+}
+
+
+#footer-section-2 ul{
+    list-style-type: none;
+    
+    
+}
+
+
+li .fa-instagram {
+    margin-top: 8px;
+     border: 2px solid white;
+    text-align: center;
+    border-radius: 16px;
+    background-color: white;
+    color: #24292F;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    align-content: center;
+    border-radius: 100%;
+    font-size: 18px;
+    
+}
+li .fa-twitter{
+    margin-top: 8px;
+     border: 2px solid white;
+    text-align: center;
+    border-radius: 16px;
+    background-color: white;
+    color: #24292F;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    align-content: center;
+    border-radius: 100%;
+    font-size: 18px;
+    
+}
+li .fa-facebook{
+/*    margin-top: 8px;*/
+     border: 2px solid white;
+    text-align: center;
+    border-radius: 16px;
+    background-color: white;
+    color: #24292F;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    align-content: center;
+    border-radius: 100%;
+    font-size: 18px;
+    
+}
+li .fa-brands:hover {
+    background-color: #24292F;
+    border-color: #24292F;
+    color: white;
+  cursor: pointer;  /*يصير يد اذا ضغطتي على الbutton*/
+}
+
+@media (max-width: 769px){
+	header {
+		flex-direction: column;
+		padding: 10px;
+	}
+
+}
+
+.message {
+    color: #24292F;
+     z-index: -10;
+}
+#titles{
+    color:#24292F;
+    margin-left: 44%;
+}
+#titles1{
+    color:#24292F;
+    margin-left: 47%;
+}
+#titles2{
+    color:white;
+    margin-left: 44%;
+}
+#titles3{
+    color:#24292F;
+margin-left: 10%;
+
+}
+.backgroundofmessagediv{
+background-color: #F5F8F9;
+width:100%;
+height:40vw;
+border-radius:  0px 0px 70px 70px;
+    margin-top: -4vw;
+}
+#messagebox{
+    height:40%;
+    width:22%;
+    background-color:white; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; 
+    border-radius: 16%;
+    margin-left: 16%;
+     margin-top: 3.5vw;
+}
+#messagebox2{
+
+    height:40%;
+    width:22%;
+    background-color:white; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; 
+    border-radius: 16%;
+    margin-left: 40%;
+    margin-top: -17.5vw;
+}
+#messagebox3{
+
+    height:40%;
+    width:22%;
+    background-color:white; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; 
+    border-radius: 16%;
+    margin-left: 64%;
+ margin-top: -17.5vw;
+}
+#text{
+   color: #707070;
+    text-align: center;
+    font-weight: normal;
+/*    font-size: 115%;*/
+
+}
+#servicebackground{
+    background:#11AAAF;
+    width:100%;
+    height:12vw;
+    border-radius:  70px 70px 70px 70px;
+}
+#applicant{
+    border:2px solid #24292F;
+    color: #24292F;
+    border-radius: 50vw;
+    height: 25%;
+    width: 13%;
+    background-color: #fff;
+    font-size: 120%;
+    cursor:pointer;   
+    margin-left: 35vw;
+
+} 
+
+#Company{
+    border:2px solid #F64B39 ;
+    color: #F64B39 ;
+   border-radius: 50vw;
+    height: 25%;
+    width: 13%;
+    background-color: #fff;
+    font-size: 120%;
+    cursor:pointer;   
+    margin-left: 50vw;
+transform: translate(0,-99%);
+
+    
+}
+.training {
+   height: 17vw;
+    width: 60vw;
+    background-color: white;
+    border-radius: 3vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    margin-left: 20vw;
+
+}
+.training img{
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 100%;
+ margin-left: 3vw;
+    margin-top: 0vw;
+    
+    }
+.container {
+  border-radius: 5vw;
+  background-color: #F5F8F9;
+width:100%;
+height:30vw;
+border-radius:  0px;
+/*
+margin-top: 300px;
+    margin-left: -630px;
+*/
+}
+
+#viewmore {
+   color:#fff;
+    background-color: #F64B39 ;
+    border: none; 
+    border-radius: 16px;
+    width: 9vw; 
+    height: 3vw;
+    text-align: center;
+    padding: 6px;
+    margin-left: 47%;
+
+    
+}
+#viewmore:hover{
+     background-color: #fff ;
+    border: 2px solid #F64B39;
+    color: #F64B39;
+    cursor: pointer;
+}
+#submit {
+   color:#fff;
+    background-color:#11AAAF;  
+    border: none; 
+    border-radius: 16px;
+    width: 9vw; 
+    height: 3vw;
+    text-align: center;
+    padding: 6px;
+    margin-left: 44%;
+
+    
+}
+#submit:hover{
+    background-color: #fff ;
+    border: 2px solid #11AAAF;
+    color:#11AAAF;
+    cursor: pointer;
+}
+input[type=text], select, textarea {
+  width: 10vw;
+  padding: 12px;
+  border: none;
+  border-radius: 0.5vw;
+    font-family: sans-serif;
+    width: 20vw;
+}
+
+.applicant{
+    color: #24292F;
+    border-radius: 2vw;
+    height: 16vw;
+    width: 16vw;
+    background-color: #fff;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;  
+} 
+.applicant img{
+    margin-left: 5vw;
+    margin-top: 0.4vw;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 100%;
+    height: 6vw;
+    width: 6vw;
+    
+}
